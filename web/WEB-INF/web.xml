@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd"
+           version="3.0">
+
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <servlet-name>controlador</servlet-name>
+        <servlet-class>servlets.controlador</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>nuevaTarea</servlet-name>
+        <servlet-class>servlets.nuevaTarea</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>grafico</servlet-name>
+        <servlet-class>servlets.grafico</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>modificar</servlet-name>
+        <servlet-class>servlets.modificar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>autentificacion</servlet-name>
+        <servlet-class>servlets.autentificacion</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>registro</servlet-name>
+        <servlet-class>servlets.registro</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>tareas</servlet-name>
+        <servlet-class>servlets.tareas</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>controlador</servlet-name>
+        <url-pattern>/controlador</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>nuevaTarea</servlet-name>
+        <url-pattern>/nuevaTarea</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>grafico</servlet-name>
+        <url-pattern>/grafico</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>modificar</servlet-name>
+        <url-pattern>/modificar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>autentificacion</servlet-name>
+        <url-pattern>/autentificacion</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>registro</servlet-name>
+        <url-pattern>/registro</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>tareas</servlet-name>
+        <url-pattern>/tareas</url-pattern>
+    </servlet-mapping>
+
+    <!--
+    <error-page>
+        <exception-type>java.lang.Throwable</exception-type>
+        <location>/error.jsp</location>
+    </error-page>-->
+
+
+</web-app>
